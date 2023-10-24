@@ -16,7 +16,8 @@ incorrect_guesses = 0
 while incorrect_guesses < 10:
     guess = input('Guess a single letter: ').lower()
     if guess in chosen:
-        for i in range wordlen:
-            if chosen_word[i] == guess:
+        for i in range(wordlen):
+            if chosen[i] == guess:
                 guessed_word[i] = guess
+    
                 
